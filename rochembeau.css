@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    background-color: #003049;
+}
+
+.scoreBoard {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    grid-column: span 2; /* Faz o título ocupar as duas colunas */
+    color: white;
+}
+
+.scoreBoardContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff; /* Fundo branco para a área de nomes e pontos */
+    border-radius: 5px; /* Deixa os cantos arredondados */
+    padding: 10px;
+    margin-top: 10px; /* Espaçamento entre o título e a área de pontos/nome */
+}
+
+.name, .score {
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+#player {
+    color: #588157;
+}
+
+#comp {
+    color: #219ebc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly; /* Espaçamento igual entre os botões */
+    align-items: center;
+    margin-top: 20px;
+    width: 300px; /* Largura dos botões */
+    max-width: 100%; /* Garante que a largura não ultrapasse a largura da tela */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
