@@ -18,15 +18,11 @@ export default class scoreBoardView {
                 </div>
         </div>`;
 
-        this.root.querySelectorAll(".buttons button").forEach(button => {
-            button.addEventListener("click", () => {
                 this.root.querySelectorAll(".buttons button").forEach(button => {
                     button.addEventListener("click", () => {
                         const value = parseInt(button.dataset.value); // Pega o valor do botão
                         console.log(`O botão clicado tem valor: ${value}`);
                             });
                         });
-                    });
-                });
-            }
-        }
+                    }
+                }
