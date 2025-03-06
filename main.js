@@ -52,7 +52,7 @@ function endGame() {
     } else {
         finalMessage = "It's a tie game!";
     }
-
+    
     const resultDiv = document.querySelector(".result");
     resultDiv.innerHTML = `<h2>${finalMessage}</h2>`;
 
